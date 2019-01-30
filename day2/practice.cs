@@ -1,9 +1,15 @@
 using System;
 
-public class Mammal{
+class Mammal{
+
+	public string isMammal(){
+	return "is mammal";
+	}
 
 	static void Main(){
 	
-	Console.WriteLine("hello");
+	Mammal dog = new Mammal();
+		
+	Console.WriteLine(dog.isMammal());
 	}
 }
