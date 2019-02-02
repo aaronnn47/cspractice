@@ -8,16 +8,18 @@ class project
     
     int count = 0;
 
-    for(int i = 0; i < 10; i++)
+    for(int i = 0; i < 1000; i++)
     {
       if(i % 3 == 0)
       {
-	Console.WriteLine("im divisible");
+	count = count + i;
       } 
-      else{
-        Console.WriteLine("im not");
+      else if(i % 5 == 0){
+        count = count + i;
       }
     }
+
+    Console.WriteLine(count);
   }
 }
 
