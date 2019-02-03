@@ -15,7 +15,9 @@ class Solution
   {
    int[] arr = {1,2,3,4,5};
    Solution sol = new Solution();
-   Console.WriteLine(sol.simpleArraySum(arr));
+   var i = 2;  
+ 
+   Console.WriteLine(i);
 
   }
 }
