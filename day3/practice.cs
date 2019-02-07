@@ -2,7 +2,7 @@ using System;
 
 class topic
 {
-  static void Main()
+  static void ain()
   {
   Console.WriteLine("hello");
   }

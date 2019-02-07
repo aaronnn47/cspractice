@@ -13,7 +13,7 @@ class Solution
 
   static void Main()
   {
-   int[] arr = {1,2,3,4,5};
+   int[] arr = {1,2,3,4,5,6};
    Solution sol = new Solution();
    
    Console.WriteLine(sol.simpleArraySum(arr));

@@ -3,18 +3,34 @@ using System;
 
 class program
 {
-  bool isNum(int n)
+  bool isPrime(int n)
   {
-  if(n == 1)
-  { 
-   return true;
+  for(int i=1; i<n;i++)
+  {
+   if(n % i == 0)
+   {
+    return true;
+   }
+   
   }
-  return false;
+    return false;
   }
 
   static void Main() 
  {
+  int count = 0;
   program func = new program();
-  Console.WriteLine(func.isNum(1));
+  
+  for(int i = 1; i < 6; i++)
+  {   
+      
+  }
+
  }
+
 }
+
+
+
+
+
