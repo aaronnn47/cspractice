@@ -4,28 +4,39 @@ namespace Animals
 {
   class animal
   {
-   int i = 1;
+  	protected int i;
    
-   public int one()
-   {
-   return i;
-   }
+  	public int one()
+  	{
+   		return i;
+  	}
   }
   
   class mammal : animal
   {
-  public string isMammal()
+  	public string isMammal()
+  	{
+   		return "is mammal";
+  	}	
+  }
+  
+  class cow : animal
   {
-   return "is mammal";
-  }
-  }
+  	public int isMammal()
+  	{
+   		i = 10;
+   		return i;
+  	}
+  }  
+
 
   class Program
   {
-  static void Main()
+  	static void Main()
   {
-  mammal dog = new mammal();
-  Console.WriteLine(dog.isMammal());
+  	mammal dog = new mammal();
+  	cow Cow = new cow();
+  	Console.WriteLine(Cow.isMammal());
   }
   }
 }
