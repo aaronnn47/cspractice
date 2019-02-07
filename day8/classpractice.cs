@@ -33,10 +33,10 @@ namespace Animals
   class Program
   {
   	static void Main()
-  {
-  	mammal dog = new mammal();
-  	cow Cow = new cow();
-  	Console.WriteLine(Cow.isMammal());
-  }
+  	{
+  		mammal dog = new mammal();
+  		cow Cow = new cow();
+  		Console.WriteLine(Cow.isMammal());
+  	}
   }
 }
