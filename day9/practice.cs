@@ -4,7 +4,7 @@ namespace solutions
 {
 	class project
 	{
-		int i;
+		public int i;
 	}
 
 	class project1 : project
@@ -21,7 +21,7 @@ namespace solutions
 		static void Main()
 		{
 			project1 proj = new project1();
-			Console.WriteLine({0},proj.h(1));
+			Console.WriteLine("{0}",proj.h(1));
 		}
 	}
 }
