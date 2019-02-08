@@ -8,13 +8,17 @@ namespace Practice
 		
 		static void Main()
 		{
-			string solution = "hello world";
-			
-			for(int i = solution.Length - 1; !Char.IsWhiteSpace(solution[i]); i--)
+			string problem = "hello world";
+			string solution = "";
+	
+			for(int i = problem.Length - 1; !Char.IsWhiteSpace(problem[i]); i--)
 			{
-				Console.Write(solution[i]);
+				solution += problem[i];
 			}
-			Console.Write('\n');
+			
+			var ary = solution.ToCharArray();
+			Array.Reverse(ary);
+			Console.WriteLine(ary);
 			
 		}
 	}
